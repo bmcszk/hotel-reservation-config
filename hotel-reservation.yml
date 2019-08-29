@@ -1,1 +1,6 @@
-test: test
+logging:
+  level:
+    root: WARN
+    blazesoft: DEBUG
+
+
