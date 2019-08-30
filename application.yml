@@ -1,8 +1,0 @@
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://eureka-server-shiny-dog.cf.env1.aws1.test.cloudboostr.com/eureka/
-  instance:
-    preferIpAddress: true
-    ipAddress: ${CF_INSTANCE_INTERNAL_IP}
-    
