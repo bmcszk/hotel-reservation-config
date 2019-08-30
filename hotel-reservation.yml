@@ -2,5 +2,10 @@ logging:
   level:
     root: WARN
     blazesoft: DEBUG
-
-
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER_URL:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
+    ipAddress: ${CF_INSTANCE_INTERNAL_IP}
