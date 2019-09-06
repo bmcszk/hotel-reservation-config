@@ -2,5 +2,11 @@ logging:
   level:
     root: WARN
     blazesoft: DEBUG
-
+eureka:
+  instance:
+    nonSecurePort: 80
+    hostname: ${vcap.application.uris[0]}
+  client:
+    service-url:
+      defaultZone: ${vcap.services.eureka-server.credentials.url}
   
