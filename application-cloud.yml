@@ -1,7 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${vcap.services.eureka-server.credentials.url}
+      defaultZone: ${vcap.services.eureka-new-service.credentials.url}
   instance:
     preferIpAddress: true
     ipAddress: ${CF_INSTANCE_INTERNAL_IP}
